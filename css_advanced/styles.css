@@ -9,7 +9,144 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #000000;
 }
 
-/* Add your custom styles below */
+/* ========== HEADER STYLES ========== */
+header {
+    background-image: url('images/Object.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 35px 0;
+    position: relative;
+}
+
+header > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+/* Logo */
+header img {
+    width: 167px;
+    height: auto;
+}
+
+/* Navigation */
+header > div:first-child > div:last-child {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+header a:hover {
+    color: #C271FF;
+}
+
+/* ========== FIRST SECTION (BANNER) STYLES ========== */
+main > section:first-child {
+    background-image: url('images/Object.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 200px 20px 100px;
+    color: #FFFFFF;
+}
+
+/* Banner heading */
+main > section:first-child h1 {
+    font-size: 120px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+main > section:first-child > div:first-child p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+/* Register button */
+main > section:first-child button {
+    background-color: #C271FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 22px;
+    width: 162px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+main > section:first-child button:hover {
+    opacity: 0.9;
+}
+
+/* Learn from pros section */
+main > section:first-child > div:nth-child(2) {
+    margin-top: 150px;
+}
+
+main > section:first-child h2 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+}
+
+/* Instructors grid */
+main > section:first-child > div:nth-child(2) > div {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 1009px;
+    height: 237px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+main > section:first-child > div:nth-child(2) > div > div {
+    text-align: center;
+    max-width: 150px;
+}
+
+main > section:first-child > div:nth-child(2) > div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+main > section:first-child > div:nth-child(2) > div h3 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+main > section:first-child > div:nth-child(2) > div p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    color: #FFFFFF;
+}

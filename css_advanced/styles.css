@@ -11,7 +11,6 @@ body {
     line-height: 1.6;
     color: #000000;
 }
-
 /* ========== HEADER STYLES ========== */
 header {
     background-image: url('images/Object.png');
@@ -22,13 +21,20 @@ header {
     position: relative;
 }
 
+/* Header container - positions logo on left, nav on right */
 header > div:first-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 0 50px;
+}
+
+/* Logo section */
+header > div:first-child > div:first-child {
+    display: flex;
+    align-items: center;
 }
 
 /* Logo */
@@ -37,7 +43,7 @@ header img {
     height: auto;
 }
 
-/* Navigation */
+/* Navigation on the right */
 header > div:first-child > div:last-child {
     display: flex;
     gap: 40px;

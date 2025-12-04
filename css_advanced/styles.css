@@ -1,0 +1,432 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    color: #071629;
+    margin: 0;
+}
+
+/* ========== HEADER STYLES ========== */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 35px 0;
+}
+
+header > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+header img {
+    height: 30px;
+    width: auto;
+}
+
+header > div:first-child > div:last-child {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+header a:hover {
+    color: #C271FF;
+}
+
+/* ========== HERO/BANNER SECTION ========== */
+main > section:first-child {
+    background: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.0001) 0%, #071629 100%), 
+                url('images/Object.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 150px 20px 80px;
+    color: #FFFFFF;
+}
+
+main > section:first-child h1 {
+    font-size: 120px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+main > section:first-child > div:first-child p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    word-spacing: 40px;
+    margin: 5px 0 40px 0;
+}
+
+main > section:first-child button {
+    background: #C271FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 22px;
+    padding: 13px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+    margin-bottom: 80px;
+}
+
+main > section:first-child button:hover {
+    opacity: 0.9;
+}
+
+main > section:first-child h2 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin: 80px 0 60px 0;
+}
+
+main > section:first-child h2 .pros {
+    color: #C271FF;
+    font-weight: 700;
+}
+
+main > section:first-child > div:nth-child(2) > div {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+main > section:first-child > div:nth-child(2) > div > div {
+    text-align: center;
+    width: 150px;
+}
+
+main > section:first-child > div:nth-child(2) > div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+main > section:first-child > div:nth-child(2) > div h3 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+main > section:first-child > div:nth-child(2) > div p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 1.5;
+}
+
+/* ========== QUOTE SECTION ========== */
+main > section:nth-child(2) {
+    background: #C271FF;
+    padding: 70px 20px;
+}
+
+main > section:nth-child(2) > div {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+main > section:nth-child(2) img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+main > section:nth-child(2) > div > div {
+    color: #FFFFFF;
+}
+
+main > section:nth-child(2) blockquote {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33.6px;
+    color: #FFFFFF;
+    margin: 0 0 30px 0;
+}
+
+main > section:nth-child(2) > div > div p:first-of-type {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0 0 5px 0;
+}
+
+main > section:nth-child(2) > div > div p:last-of-type {
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* ========== VIDEOS SECTION ========== */
+main > section:nth-child(3) {
+    padding: 70px 20px;
+    background: #FFFFFF;
+}
+
+main > section:nth-child(3) h2 {
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    color: #071629;
+    margin-bottom: 80px;
+}
+
+main > section:nth-child(3) > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main > section:nth-child(3) > div > div {
+    text-align: left;
+}
+
+main > section:nth-child(3) > div > div > img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+main > section:nth-child(3) h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #071629;
+    margin-bottom: 10px;
+}
+
+main > section:nth-child(3) > div > div > p {
+    font-size: 14px;
+    color: rgba(7, 22, 41, 0.5);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+main > section:nth-child(3) > div > div > div:nth-child(4) {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+main > section:nth-child(3) > div > div > div:nth-child(4) img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+main > section:nth-child(3) h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #C271FF;
+    margin: 0;
+}
+
+main > section:nth-child(3) > div > div > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > section:nth-child(3) > div > div > div:last-child > div {
+    display: flex;
+    gap: 5px;
+}
+
+main > section:nth-child(3) > div > div > div:last-child img {
+    width: 15px;
+    height: 15px;
+}
+
+main > section:nth-child(3) > div > div > div:last-child p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #C271FF;
+    margin: 0;
+}
+
+/* ========== MEMBERSHIP SECTION ========== */
+main > section:nth-child(4) {
+    background: #071629;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+main > section:nth-child(4) h2 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+}
+
+main > section:nth-child(4) > div {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+}
+
+main > section:nth-child(4) > div > div {
+    width: 200px;
+}
+
+main > section:nth-child(4) img {
+    width: 44px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+main > section:nth-child(4) h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+main > section:nth-child(4) > div > div > p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+}
+
+main > section:nth-child(4) button {
+    background: #C271FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 22px;
+    padding: 13px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+    margin-top: 30px;
+}
+
+main > section:nth-child(4) button:hover {
+    opacity: 0.9;
+}
+
+/* ========== FAQ SECTION ========== */
+main > section:nth-child(5) {
+    padding: 70px 20px;
+    background: #FFFFFF;
+}
+
+main > section:nth-child(5) h2 {
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: #071629;
+    margin-bottom: 70px;
+}
+
+main > section:nth-child(5) > div {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+main > section:nth-child(5) > div > div {
+    display: flex;
+    gap: 80px;
+}
+
+main > section:nth-child(5) > div > div > div {
+    flex: 1;
+}
+
+main > section:nth-child(5) h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #071629;
+    margin-bottom: 15px;
+}
+
+main > section:nth-child(5) > div > div > div > p {
+    font-size: 14px;
+    color: rgba(7, 22, 41, 0.5);
+    line-height: 1.7;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background: #071629;
+    padding: 50px 20px;
+}
+
+footer > div {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer > div > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+footer img:first-child {
+    height: 30px;
+    width: auto;
+}
+
+footer > div > div:first-child > div:last-child {
+    display: flex;
+    gap: 20px;
+}
+
+footer > div > div:first-child > div:last-child img {
+    width: 30px;
+    height: 30px;
+}
+
+footer > div > p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 12px;
+}

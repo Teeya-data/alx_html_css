@@ -1,0 +1,212 @@
+/* ===== CSS RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== CSS VARIABLES ===== */
+:root {
+    --primary-color: #FF6565;
+    --dark-bg: #071629;
+    --white: #FFFFFF;
+    --max-width: 1000px;
+}
+
+/* ===== BASE STYLES ===== */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--white);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== HEADER ===== */
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 28px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 161px;
+    height: auto;
+}
+
+/* Hide checkbox and menu icon by default */
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 20px;
+    height: 2px;
+    background-color: var(--white);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 41px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+    color: var(--primary-color);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                url('images/headphones_hero_1.jpg') center center/cover no-repeat;
+    background-color: var(--dark-bg);
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 200px 20px 100px;
+}
+
+.hero-content {
+    max-width: 637px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* CTA Button */
+.btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 14px 31px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 22px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover,
+.btn:active {
+    opacity: 0.9;
+}
+
+.hero-text {
+    margin-top: 65px;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 637px;
+}
+
+/* ===== RESPONSIVE - MOBILE (480px and below) ===== */
+@media (max-width: 480px) {
+    /* Show hamburger menu */
+    .menu-icon {
+        display: flex;
+    }
+    
+    /* Hide nav links by default */
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--dark-bg);
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    /* Show menu when checkbox is checked */
+    .menu-toggle:checked ~ .nav-links {
+        max-height: 300px;
+    }
+    
+    /* Animate hamburger to X */
+    .menu-toggle:checked ~ .menu-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle:checked ~ .menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle:checked ~ .menu-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    /* Hero adjustments */
+    .hero {
+        padding: 150px 20px 80px;
+        min-height: 667px;
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .hero-subtitle {
+        font-size: 14px;
+    }
+    
+    .hero-text {
+        margin-top: 40px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

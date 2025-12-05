@@ -1,0 +1,98 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff6b6b;
+}
+
+/* OUR RESULTS SECTION */
+.our-results {
+    text-align: center;
+    padding: 80px 20px;
+    background: #071629;
+    color: white;
+}
+
+.our-results h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+/* PENTAGON CONTAINER */
+.pentagon-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* PENTAGON SHAPE */
+.pentagon {
+    position: relative;
+    width: 100px;
+    background-color: #ff6b6b;
+    clip-path: polygon(
+        50% 0%, 
+        100% 38%, 
+        82% 100%, 
+        18% 100%, 
+        0% 38%
+    );
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pentagon:hover {
+    transform: scale(1.2) rotate(10deg);
+    background-color: #ff4444;
+}
